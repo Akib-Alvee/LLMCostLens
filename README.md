@@ -49,6 +49,13 @@ black --check app tests
 black app tests
 ```
 
+Create and apply database migrations from `backend/`:
+
+```bash
+alembic revision --autogenerate -m "message"
+alembic upgrade head
+```
+
 ## Frontend
 
 Prerequisites: Node.js 20.19+ or 22.12+ and npm.
