@@ -1,0 +1,22 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Environment files
+.env
+!.env.example
+
+# Node
+node_modules/
+dist/
+*.local
+
+# Editors
+.idea/
+.vscode/
+
