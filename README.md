@@ -39,6 +39,16 @@ source .venv/bin/activate
 pytest
 ```
 
+Check and format backend code with:
+
+```bash
+cd backend
+source .venv/bin/activate
+ruff check app tests
+black --check app tests
+black app tests
+```
+
 ## Frontend
 
 Prerequisites: Node.js 20.19+ or 22.12+ and npm.
@@ -58,4 +68,3 @@ npm run build
 npm run lint
 npm run format
 ```
-
