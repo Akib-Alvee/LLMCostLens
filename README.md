@@ -56,6 +56,16 @@ alembic revision --autogenerate -m "message"
 alembic upgrade head
 ```
 
+Seed demo users and model pricing after applying migrations:
+
+```bash
+python -m scripts.seed_users
+python -m scripts.seed_model_pricing
+```
+
+The demo API keys are `demo-user-1-key` and `demo-user-2-key`. Only their
+SHA256 hashes are stored in the database.
+
 ## Frontend
 
 Prerequisites: Node.js 20.19+ or 22.12+ and npm.
